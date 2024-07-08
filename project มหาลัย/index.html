@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>My</span> profile</a>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg=="
+        id="menu-icon"/>
+
+        <nav class="navbar" >
+            <a href="#home" class="active">Home</a>
+            <a href="#learning">Learning</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificate">Certificate</a>
+
+        </nav>
+    </header>
+    <!-------------------home--------------------------->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="/img-2/IMG_20240515_223531_720.jpg" alt="">
+        </div>   
+        <div class="home-content">
+            <h1>Hi it's &nbsp;<span>Film.</span></h1>
+            <h3 class="typing-text">I'm 
+                <span class="auto-type"></span>
+            </h3>
+            <p>welcome to my website🤭</p>
+
+            <div class="social-icon">
+                <a href="https://www.instagram.com/_xationz/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAn5JREFUSEuNVkGS2jAQ7NYjcl14SfAl9zwgtfASoPIQ2GfktOQl6+SScz6gjkca2bItIK7CGHk0M93TM4JYXgSgdJu/8aXpdW3z2H509MQ3AIKQx284TZ7cZnxuIvDFVda2fQHwP4D4rimSpI2AVwI75E/zEtDTmCRuw/1Mss8YpiTseQxgP2LUHsTFPfaAbskgO6ouQYkObDyJHsKVIZyn+hGsEVrmAD6GDTeS3b3My3rZK8UNwHdP4hDIW5HIDIEky3wPYJvg3hOHcxAVv1E4g/gr4Csbyc1BS5Z9b9lPvvOTEnV6AWgof5K8RukLhR8gfpN8kfRutmRw9IUi9ybJkF1JHkptFFPBL17wmjUr6HcAfwB9IsNbDoANyW1N47jpTgDbZEo6kTynOgmvoE4C+xC4LT1ZKA5kElfuiVoXFYJJUVYXJud1oxllCZnQMfCW7L2Gg+3otxUgOas3jEWvcBt1rjgPDhQEKUDVpEuKTmTWsqKOg+FJwDYEms6rJiKkaExMAaIuIPaJohKgHl5pg3BiMDpgAXagFW6iqDTRYHu0dQAHU5TbpwDPEFzJcLChFo2G3NVGh6nrHKUNvcgAZw05o6hV5CgZspVMAVwg7OaSQC+gK9S1EaxVZJL0RpmaPY+CJNXP1ogDLb8KLbXeY9THQFEfyC7XoATwgpjMvKG61ai4N/49wjTHlChuNlriN80T9QK74ON3apXG8LdBmyVrtTKUtm8x7NzDornSbB/H9Wq0rsa1CezAwOsyjcp9FrpndHT17NJRsDoPxoiWiB04byTtu3HgzEM8PAaenJDz08sbc3VkNiM8KXKZvvM/IwuZ3vPx0Pfq5XzhH/bDdjDcOyQHAAAAAElFTkSuQmCC"/></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVet5wjAMlDIJ3aSdpDAJYRLaSWCTZpJcI/kl2Upo+UM+x9bpHoqZ+h8TEfKifdalw5e+km5lPeGrDUUDsLznED83ZAByfwFA3PdeJyORQaVeCiZk1V7QG5gx8WEff2syaNAIX2oAeCeiBxEtRPTFzLfdk4EHAM5EdK/nJ74J7eoBgJ+t8CkVlRixgFxCuTpmwHonYgEoZxdmfiu5S8tACWfZJMvC5oOZ5b8LHBOwSkPStbD3W1jUNzGtANq822ska9pgxRlE97JVj5mzm8T6ykqkFHxtBzQXXwCIV6br8SRPzG7QgBWwlEKHsWgLoFP6228oZGBrNsoyA+zoR9g92EsAiWqWISdrN7QLkTLLkiUoDyB0RaGaMn2aCfRNTNctTTmCA8iTmT82ea8by9n6VwHaoK1pLJo2aioAYfCpgP43T/I+RVyakIaqKQnAxXQwed6SoNOoxFaIsY9c48LMz4JXAbIE4tkGbmKqEmUGrcscyza2wmZiXhKmW08MBoDCIHvQGOpTzb1VJroDNv8MQFJ50jnoBq2LqWqcdCyf6yBJib0zWQECD67StTGqMhgunHwdlrvVe6BNiEcSc/9l2CtkGXS1w+Gwe8ZPT4ziC/3jInI3WjtndQ9uly5FIbo5Vt83antFQ0UOF38BPykHMC59TsoAAAAASUVORK5CYII="/></a>
+                <a href="https://discord.com/channels/@me" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjlJREFUSEuNVu1hq0AMk1jkpZO0mSTJJE0nSTpJ6CRlElTs84H5St79OnyHLUu2gbBFAPLd/62N+3suzP4iQLyaPTwNQBCC0msbqDe87Zncvk9BySDWdDdQrA5fYNmg4ylFkg6ATgB/SLYZiXp9AHgH4GdTDpkigvmgKi3pc3B2deELhA5Aa+cCwWL/EHAoe3UA72z4taSrBEgUVuflvTHAfnXNL15I3mdyLeVRLwOZVqAOyypmNggdG75lKZIrold/I3C2C/P3KlNhfZ7ZtSG/alvNNJD6XwCHZ3y4Bn5hG4LpRUYWdrdSJPVngLeZ80nACDqnK8dZaHZkw9bEzQFuAs8z+oE7yYuXq/C70ObNiRNOQzVcK4lRaU6TD4mUwQ2g8z82Hv24AO31iNI0t3eyudhI6L1XYNSOS0DbkEcPMDqQ1vwLRzZNqX/pMfSCNZetluRxAidNivhu1GHsZC/PjKHE7gBdBL4PT9eFtHcA30Ny1pQl8CREKVfNKMoo5glPlZNrZ69WSyEMGjjC3Qy2nS6YLiJvtXxQVEvasqvzZ8q1g9CC+BlEPEXZ2/zpQrjOxIy9FYdVWoXsI8Melp1sw+s0WJ3v2jSraR8GqyACD8AqybMxQOa8q1/JNK7jLbvX6yDgxBjFqXDT16qM5V4y9P9McHfsqE2HosCirxafzzxqZyOyVMwqsyxR7FMGyTJOqmefw42IgTr/QawzyCj2IK58T/SOfyfJFLm+4CDoyvyu/nUypQH0D5NEKS5FcbRmAAAAAElFTkSuQmCC"/></a>
+            </div>
+
+            <div class="classhome-button">
+                <button class="button">
+                    <p>Hire Me</p>
+                </button>
+                <button class="button">
+                    <p>Contact Me</p>
+                </button>
+            </div>
+        </div>     
+    </section>
+    <!--===============Learning===================-->
+    <section class="learning" id="learning">
+
+        <h2 class="heading">Learning</h2>
+        <div class="learning-container">
+
+         <div class="single-learning">
+            <div class="contect">
+                <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABItJREFUaEPNWotx2zAMBbxInUmaTNJ4kiST2J0kySR1FzFqkJREkAAIOm6vuvM5piASn4cHkArC/3ghAJCimDLOQ3e/rPUjC23Pxmb5Kwa4ihpe1Bxez6Obg5ANSHelSP0r7JWBchGfdjKBOVdDJ6DXOZmI9gDwAwD4u/6cizB/8+cTAD4QcRmPICv7uEi2f5cIDOYxrCOil6tCj+WjT8IrC7CmATbghIhvGwpCtgihm3OgKP66zLbpKLVNvzoDhA7SEA8PGpxmYUNE7O1jgYntslpp62/5NBvydAu0VCW0xCWi56L89ozv3WruiCCdAXCDVQBRYQi1kAnM3YhEDMiJelXqdc2NQGoOIgBgKW/hvguPq7t50zCip3vbRgSgS8L8+7zH2yemIlBIE+1IFDsMCOW7JWGz8rH1HTvLBPWXMmczxIl9QMQPa2K0CkTSmYiV5wisV4AWs+xtsBF6linOiPiw3QhCqGOciQhcRV+R4BN3+FEqNFfm71cl1roxSWMchVN+RjNAKQZE9GvI9X1c3ZAXYziqbNDMVUWhMUArZESXZwI8+hVUYrpow4Wowms/ezGCnSNh6Q6km2pCq0msYT/gLi5Ah1XOaT2JiCs5F8UZJHED+NTqIQxY1rzy/qg91+ypcOqbK9htER0zEks2EW56RJZQ24WA+wHgwe9jtpBoMIot0cOog5Aa3tjsAwPkJCnKE8xWnj4h7g6Jo61CJvA/t0AXXsvuqShLHbo8EIWsQMihT6Uv3obsJG4S+gtRbooagGbAOIG7yKQBtQa0ZLQksD7FMOS9AW2Y4wykLuZuSkryMoWK9iSWYlnq2mZ3zCnpWOl/3AV6VKUtIm/euahdiPaYK29uJWJ0aS0ZiMCF3gFv99CMN2dki919EisQ6quksdIQsY6GNz4riaI97NALmb3UjUoEHa/OfkDcneqDU62QMV5zszWH1wX7v8sBlnZwxcn7rfRBsx0pa9QVy+lmTqG/MyC8bf167JysPp7Z5nRj2sEnsVLmJnmcPVEpT7jDg3oUbgGlWqs6jlQ2OvUEyTC1WbS6UQ7vaONRMYLTOw8QT3TZE+ALEjyzI60Y7BDT9mS9/E39sCvt+DiYmapYYKdmturmwZZeNYV/RNUdx0CX4HUI4Ih2dXadZRqQSOhCe0DeG5tiw2MPLzLZSXzygR4juV2ua4BeF1R65dbhp3d+I1Iye/0F221lb+2wRTcM4Fc3eb9RjOB3AAOmSKJrH5TIDddjFf659EO8F84e9yuh2MRvABydCylQLQ0Zv30xjUi63K80f/1wt+OrvF/uIzGo1rpNlqWS7y1iqMfNHLAe1invLq5PhLBj2CmZ3yq9yFQGKCpXxaKetKqgG57bRV0nc34tr0hz3izvA1w6NlRUmW7M6wAlN7hB4/yY2mURwPm60Zl6G6MpKiJQM49bWRXrUlQIHgHTzmvhdTaqfc3KhSm/mUyXZLzZii6auaRXxPWDVTzKy1DsqVAbjxgzLGSVo/R/wIis8hWZgUPzscodvB6B3OwyEfnuXCjkrJFX/oVTiqJ/AHXUGVBn1zMiAAAAAElFTkSuQmCC"/>
+                </span>
+                <h3 class="ititle">Teamwork</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vitae?</p>
+                <a href="#" class="lear-more">Learn more</a>
+            </div>
+            <span class="circle-before"></span>
+        </div>
+
+        <div class="single-learning">
+            <div class="contect">
+                <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABMZJREFUaEO9WYtVWzEMlTJJmaRkEmCS0kmgkzRMQiZ5auSvbEn+hEN9DoeXxJZ1pauP/RD+40AAoLBffdrfvl3Ln/zxlX2WNTM2kV+FZ1+RCOBORdU+SWlP3J3bTG1sArhrsy8v2hcwptAyDQCI6AcAPAHwf+Tn/HcNxEe4ApS/D0S8jD2/BqYBsLakoqpKw3NSuIMcNc+j/RTAvAPAH0Tk58WxE8QDThPRr9vPr4u7hmkBQIcieeUdEX8XWUlH26AzAJMIPIgeEeBvq5DWagdYmhs8UoGs8cGhkJ1fitU9fQmY1xcA+IAEspoezolmP29WZ8q1o8p8tbzhGcQJYu1DImKrP4oIAAJkhneWizNuYGPNyjS8aZXNkmKHZTENOdgTv8o/9sTL0ItCxYm3EYiOTvmyxLXWCAAHNgLBUTKXGUsuCFnbxh6IlrSCla3+ElKhMywAg7nsBTZS9EYdrYEMAcNKTETs5hCwYlwR8aH9SgccHcQMayg0cnWilQWCDcXp1hyFl9avRPTJVhExeyWA88nL28K32QN5bQqBIV1NEARXPPUGy+1PiEFhpdItSuokFeK/s00bP+WtJcOqQwLBhpPDjwdvg57DN2lTPsYdd1XWK3LcSc/fUjMbT1VsMwaI6I0AnrN7bs/Xk+K9y0rhxyFj3B+deDANaGYhouMzNWR5k2Eg5bTYJP4N3S2fEREXu7dx8sidVifBoM9Ddt+k07iTRBqtEws1Bq1Cxt8dGvm4oCiVdbO17plY4PL8Wv1LNCgaKQox/0uvEte59Kmq2r1Tb1d7vs81o4heEPHc71aLTfRAaBtEBij08bfazTxrabcW0pLKL3hCbgobndOHKDQXL6WsLAcEgKdQA82xEif9QiPu4hR5iJBFzWvmXEHdjqPKOveHjpOj614d26g2xooBO+a6M4AJYK5543q50b2GswCE/meWxld6m1bGGJ0FQNosPWsP9JlBH1y8/mcjAjY8I6UaxSxkoSaIe9lNGo0zF3ugmc/2f1cACN7xdHrJF5Qs0aJQX8IVaq3KWh3YhWAYs6tJXTsdslY85sl21jjAdIl4vdROMIjcSPpcfbtDqjWpSaO6FxJn4BA+k2ZuJ1zjXBUWre5syGcCeIsU4fYCL6eO/7GJNIZRwlsvTIJyJWZnxc4oqGZPpgEgAB2KRgyzCljRcJnwWphzkWC2NO6ZuGaAko2HNxFzTDObR8TORYLIhLqKm6dA51TEIMyjXW/wWJgCdwNPVwqfcwYYrnUbsmSNPqXy1z4IYZydeyGR/biVF7d/wSzORUJNBkO2Di62hp5oAEy6V0mbruUyiqhFoUnADUC01+JCzqoHBtf0bgHty2bZ1qun4kVGfB/QXvQPLnerPWUMKHlFgzK/U95PEcMYMAJz9FKDgeSrdX6uV5JRL76OfEoc73kutyq0sdVeopCPOKXXei2etm6dkvWpWUgbWfHWTtNdhe5XOR7wV/Evk2vx5RKWJmoKGvarX3UemBcgQ5+0SHCZKTGihRLCt33YvFISUzaUWo+BiVDx1oVfIbWvWaNu8jXrwpvJNRRjCiWjeO7b5Uqdv6LcyhzjQJM3WVtuQ9hdu5JtPGNteuB+m3/XyvUY+C4NXLnj4pUPgf8AfjN3Uh57a8oAAAAASUVORK5CYII="/>
+                </span>
+                <h3 class="ititle">Goals</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vitae?</p>
+                <a href="#" class="lear-more">Learn more</a>
+            </div>
+            <span class="circle-before"></span>
+        </div>
+
+        <div class="single-learning">
+            <div class="contect">
+                <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABEtJREFUaEO1WDtyFEEMfdrIHMJ8TuCAC9ihMxNBZjgJyy3szERcAhfrKp8CBzY3IIB0xWimZ6Z/6la3l67aqvVYI+lJ76m7l3DwRQC46jWxcg+056vD0EL+Osgqpq0lV4lsKUUzgNGp5tkS0VIu30/yvdaBYoaW6MAawoKosz0uFUMHLEm0csHms14IGovVvmzxI7+dvDNRyKJAr2X1GdNek/kNM0yPeT5pGyJL+9gNTP97g4uMaX6MaqqeUu8EkLaEmU8AXAB4B+AFgNv5Q0S/i9C6aDkDSDyno2qiTVhpsdqPSfMFQJK0AFAW3wP0XQAR0f2zC7fks4TLlECpSlTpQtIqGumG352fJuJl+OVRqMzpctLSn9xA85+HNtEbAsBONw+tFzUtt73SIubCTNZxaIUXioV0iy2DKeT9k/d8AlqEONIjX1+t6mGk1aoVxWJfpFvSd2ZmLWUTTw9tFNWJaEPraTfT9QmAW61F819z79r6ZETNAG0oKHquA28BvHeflzGFDppQpk55KGPUbwCuiTZ3/n1jhDOXPJYxM58vYBhHMmj+B4Ax6bzjvwCupsTpIQcuaUfunMPMR15Xzu0odB5VCiHJXjNwtSESEOpqPo3umY8J+OAACd3qK8Ghpn/nqi10KS9tjBrfm7rOnOhFJ1lR1Y7fJACWZTmZBhqoJV/6f6AXQChXW1V+Jw4yglUpNNsy8yOAGwB3RJtd7ReHUC8yBJIQDwBfA3RFGr9lWOz549Dkz0PcMyJ6yvfFcCML9gVAHDkwtBudFo7BzPtjgGa9/Knxm5lfA7gchsTWw/0mBBD2pSriCMDKT5o2FGY+JXJgaqRR+L0kDmx9F041zwWwl/0v0SatACRO2hkDmKE4QhGhilReW3kA6hSKKFHtwJ7lIOqvIhit2oGHcMo2dmAEsKIQALmpPR+qNIAuoScGbgiQ8SjALofnAU0MjYoARLfCvAZDALkgIYUq9wFDljmTZ2jAB+A0EEWINGBKsfMc1aiBKBWdIrwF6OtAC9knlFU5U2uI+jSQJxMz/wBwqhzghNfRBNEvER0d2BHRWWmzsewDkuBj8wnU9aQjab+bsgtPG6ayrMdpASGdmKpta33R1M9HcfeJiG6mnV7f7icAhmOfaX5XpGzshtBSkg8qX0qx3J/ohuOAjDtoQyNMU2po7XbYX75MxoVDluct6EDpehn78zpyOoq8f4079zCWXeIVwgcFNZxGLZVwYATEK6cT0cr8mTOaj8RCDfn+C4wdbfyjsiVaCNATsc6y9Wf00izI3aadfbG1GZuGbpbHaEXcFpYWbSwOKmCq+8Dyfmew2llrkWuLAD2NmwB05Z55aX3kvnU5jjTQ5aPrpT6BFpS1DNvQc1KczmwtQqwIpDg8vDzTuVSDXUzOXTgOjDtxFwAwB6sYWvxYXGgSyQjdJGILG+q7v565L+76nqNuZLY0K1uDzckBrf4BKSDzRifHCGsAAAAASUVORK5CYII="/>
+                </span>
+                <h3 class="ititle">Experience</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vitae?</p>
+                <a href="#" class="lear-more">Learn more</a>
+            </div>
+            <span class="circle-before"></span>
+        </div>
+
+        <div class="single-learning">
+            <div class="contect">
+                <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABIxJREFUaEO1WYtx2zAMBTRJvIkzSZJJYk/SZJI4k1STCBX4MX8ACcqu7nr1ReAjHv6kEPhBACD3S/8dXieZfFH+Uvuty5uRgmCh7njxWGKofrPxY5gGAhPWGugiv0ZAIKBZHoI8/0l4ZpGb+Bo6pQlX24pGyhPQ9H2Ex7M0HBArPPCwvgetaF5mDyHdKUR0BoI3QDgDwAsA3ABg3f14RUT+f/gQEa/73NcmDK6C6DAYLz2GHNO1rVQhop+wqau7tO9YJdEHIn71CulGxIpfOiz53bdujJKRksStCbzydPZsu88FEa+SBI2Vd+0ICS64yBg1br8KBbIb0RkBmEDI+B4B55nTUoVTCJu/IrEMNduh682IMzQnCxIRb8xxqzwlMQL4WhA/cmG2/i51iRsaTHFDxNeRu4cESsvl2+oqEMBtqTYfG6FW1eGf2lwY5YB7n4TquA0x2qRC16IGcyuW1sMoG0+6Xiorz8ihLuBMeZJbQFsheXIqiaXEs6jXt4jnN4FzQlzWNC6X6FkOtB2DNnoHhD/PsfuEykX2wwcu/d6i1xZD3Y6LZfXmlU4r7r++sKpodZfqEXDHHItycnJPEOiLttUoFBu1jObx30my0JfHEpYw7MgI5dRLtwRCKnTb/oRh3S5meXG+YoTLgniNp14lhMIpKbwdN55HrN507tKTLbTvylntj2TEECLaXgBQnFsOhYLFA0GmIyqGkUJAG3lVFx/iNblI6MrNOO8h57tvjDtDE7ZoLbtBHO4aD8Tqo7iSDyu/QHALQcsT6tt+Inu3dF9BxuP5Ux0/LwTwhjpeE0ZNJyYiVqbuvnxUZBeWx72U8Hw05DWdkbtorysAHsFLYaQNc7F8Vh541ZSP1ZhoYxJ85LQ8LV41ybizd4vnunI+MEshVJdbf0TMN1AO2pYj4+6lNBoMDuwS3q5LobNCoLD/wPqxHxInv+yFskQa8O7FhG9AfvJ2aySQogBxCcNvDBZtsL1vKjXMe0PeO2oy2sADoSIWeBYC9flXnUPqYO8d3LN5woiH4BsqpIZKsOKCJ2WUuFuwJjDncimRy4rQ4GmOEEJyRRwT4HKY13V1kGo8sNHnHq/qpVXgUd0b6XEkJHGztk1idwqjP2lQddsGqwnTVNkLDpRRmYBSEBKB3qFemESFRlbcXJwJ4KewRhavNrxUJPgiDYBvAgvEJnz4/eQwB9z6v/kyl+9rQtfmUYLLZ/kQvOLiO7daXiHDW3ClbXvfp2AZD6DMneiBTgINLmG7M3JzP9prcoZpu71v7YVQNKXflC6GC93c+tnYW5rH2KljVsXRVr0sji20O7sQObeyN0aDGofLFXG5ue9fCmoIp/7g513SHSDz05ll+ALa6Lx/mcuJ5B83+D7fj9hqH65SxI8djMcPY/G/lW/jEOC3/s6gQYtJbGJUfFoT4Js/6SVY3i+X19V/iECX6IQ3HM6sfNj8/xFo2B3UsB58qhB9EoEnKGeN2yhnKaMFpkVHJ2MRnNW2/yl7Hu3QiicTC8YyhZC8taVKaAH8LDLSLPQIdr7WUlnNntSB/wG/1TVWiYC3MAAAAABJRU5ErkJggg=="/>
+                <h3 class="ititle">Graphis Designer</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vitae?</p>
+                <a href="#" class="lear-more">Learn more</a>
+            </div>
+            <span class="circle-before"></span>
+        </div>
+
+        <div class="single-learning">
+            <div class="contect">
+                <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA0tJREFUaEO9Wet5wyAMFN2h3a9TdIZO0f3aHaJ+PBxLRoKTofWvxBGg4/Q4SKI7TyIingxctvEm0O/zNyL5rnz2Vx/6hTh9Z8OUg3qCCqA93fodmGYBO2rYw2P1vnpepsmG39qvW4NgR3S4KAbywszMNcBbdKVUQXpeeaTYdN7CNhrkABCEHQAC1MNebpizy4FHYUADsB2arL7BOWTdrgrVEGoPE6WXSQjB2z0sF14Zmc4OhRCyE9OVLINlllLLVDG5YiCnciVg85MXZqwXTopEmAFmfieiTyJ6hVGdRW005IeIPlJKX8oISDVlfzBQ1mw5IA2Y+ZuYXsuPPYEwJsfwJ6X0Vn8zPHde+QCMELqGmOXICrRYyN7IgQLgoEcwsOK0HJuL3kwnXuuZycDxMu/IyVwi5keb33d5BUyMASOIZ1UICaECfojC/xEGIKpTgIFDK63m6gYAovVNAUiDLDVq7V0JFH8DYAZapQr3gRPA30CIAbjkQEYzE3NwDkyizChkdU9F50cUeZiB0sgiXTiWLqKReQM1rB7Ag1k2WF1GSxLHpQTCBpEtJSZjxwwYUkJ2eX24m11UBKSnJ+AMMBADGJmnVcDVwf7621N+wfvASzr3Vk/aSeLgztWWvgbXDaGjyj+rwrAkaH3vuRRzFbMOVqGihcwk7tqa1+cC/e9iaiZ5OIkfzN9ppYwGABgJ0pVZnIHGqN3IssI+tfnpY0CxStP22XhFKd8yiOOoA0BfbMlcK1JiGB4Bp70aNJi/+C+e7stMSkgtFGuye6yvWsnpAz4DiBbydM4OCHMA3s3cMAd2uIZJ9BgA+1YicmTdhew5DwjACKE2BRJCttcbktu4JRE5UGPEul6XDp23EuqtuCOaOIqclWUSXey1MrCuVaSc7kKodGJ9Hgg0JquuB891pZFdZZ5i3GWgSUApJQK+V3ZFs/P4GyTNXSkh1ej2nFzW4LiUCEjfuY6cW6AyOwjg2sT/r6KOJPpZY4FbCTuIkB0NhJ9xGJOnMBl3gJz+pxwI4HPFXGnmyJ98mzf8pu/PrLw9fgVHbKyfAV0I9WhiS4V2I3p4Nux7ALC/zbDLLn8COxERyP6fggADbYHOL10qkH8dA60EQVVsfgEPN95HF+ZkvgAAAABJRU5ErkJggg=="/>
+                </span>
+                <h3 class="ititle">Graphis Designer</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vitae?</p>
+                <a href="#" class="lear-more">Learn more</a>
+            </div>
+            <span class="circle-before"></span>
+        </div>
+
+        <div class="single-learning">
+            <div class="contect">
+                <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA4hJREFUaEPNWYtR5DAMlbaSpRKgE6gEqAQ6YTshlaBbOc7GsfWzk2UuMzfHJLL1nv72Ihz+ICAQ0FH7IoC1GX8+4MlaSmWO4gOUpi0OItALR2BnEtY/tgQEY/rwIuaOyGiahLAscG5XpQ+asj0gfDOMSBQeiIGLSflQhvYRjOvmABE9AcAnAJxdWFx6cC4a3saCzAQAr4h48fTUtUKXZzC/9A0ATwsqE1wEuaYtraUJ8fTgEbiVH/IMNROgMK5GMLzyhhkRPecV/Di5nYdm/O5TQtVgz0ZW4iu/TwQ6EiTRlRAu75lAvx0rvuENNoKcE/zvciX1oRfYpZ0pLDiEXPOP4hU2VqKQiTwjIv8/P5s+YLgsGkIlFt/gvoRQy9gTzzVnOwdyEsseiIAwS47r2FXD7S8us1/xMsr5oSZxjIAcEsLa/OqEmPKciM4E8IlcwtfO0njhsCrUmHOwpJZllEkAwE+x94SImz6hEFidZOWAXDpjnlGrStUHav11n/ivPcAkVQJtFZJL0UgVcrNTEigbWfE9lfFy5Kw8tKMKxYt4D6E6RGIhFO4DfNYNzB89iCvZkgDDyqPY2r+6PGCW0UGUTo7LHlgX3S2JzUGtg2tVRvks8l125YZA3dXqwefPkjiTLBtZPkgxieX5QsTX0h7HltE9boi1Dx7oNie27kYW02PUSa1l69PFssIb5tQ+wK3cPw93xPmAqAh+marN/YjymXhA623JmNsmApiuw9wF8fShHbsiIfR2BfLuBYWMUUeufHm3Tl8ShpZAFUl5rP3xsl2Y3Ud89pBOXT1n4ogWInrJJS0irso4keRbXyC2MaxFnIj4couJ3ONRk3RRZl0+hAFdm5qaD+FNWkHb8g3y7Qv1WkUDlE9JTIRLa9kloxzSdQkBXK5dt7ou6Qx+92YuCulP5SoPhHWbxtlOVH0/MbWA7IuoUQIN0w53h62UBb0J87Zf8GxyR6gVtYim7a81an8iou0MJEyakQkhIiM7aF7p3VbPBATi6wwUg2BK5Y/+Ts1FTZ7/9TyxPCB0Xx9Cb7g78ukqUbRx5mTOQodMogrCgCns7qwSKBTSL50B0+9jXQ3rgMFOvAOVyqs3ZCY6eZh7zET2HW500xsdunTjzlHimBiPlct0iHEaqO0BZ5CSyUTA7THDLg9EwOmDbxoxIluYXb8eW4oaNbR300jKThnZUZeJrP4HHy+TRXZ3x1YAAAAASUVORK5CYII="/>
+                </span>
+                <h3 class="ititle">Graphis Designer</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vitae?</p>
+                <a href="#" class="lear-more">Learn more</a>
+            </div>
+            <span class="circle-before"></span>
+        </div>
+
+        </div>
+    </section>
+    <!--------------------Skills----------------------->
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="container">
+            <div class="row" id="skillscontainer">
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/html.png" alt="">
+                        <span>HTML&nbsp;(1year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/css.png" alt="">
+                        <span>CSS&nbsp;(1year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/javascript.png" alt="">
+                        <span>JavaScript&nbsp;(1year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/word.png" alt="">
+                        <span>Word&nbsp;(6year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/Excel.png" alt="">
+                        <span>Excel&nbsp;(4year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/PowerPoint.png" alt="">
+                        <span>PowerPoint&nbsp;(6year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/premiere-pro.png" alt="">
+                        <span>Premiere-pro&nbsp;(1year)</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="/img-2/photoshop.png" alt="">
+                        <span>Photoshop&nbsp;(3year)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="photo"><h2 class="heading">Certificate</h2></div>
+    <section class="certificate" id="certificate">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="img-photo/cum 1.png" alt="img" draggable="false">
+              <img src="img-photo/cum2.png" alt="img" draggable="false">
+              <img src="img-photo/thaimooc 1.png" alt="img" draggable="false">
+              <img src="img-photo/thaimooc 2.png" alt="img" draggable="false">
+              <img src="img-photo/comsain 1.jpg" alt="img" draggable="false">
+              <img src="img-photo/comsain 2.jpg" alt="img" draggable="false">
+              <img src="img-photo/code-org.jpg" alt="img" draggable="false">
+              <img src="img-photo/code-org 2.jpg" alt="img" draggable="false">
+              <img src="img-photo/code combat.png" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="header">Contact</h2>
+        <div class="contact-logo">
+            <a href="https://www.instagram.com/_xationz/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAn5JREFUSEuNVkGS2jAQ7NYjcl14SfAl9zwgtfASoPIQ2GfktOQl6+SScz6gjkca2bItIK7CGHk0M93TM4JYXgSgdJu/8aXpdW3z2H509MQ3AIKQx284TZ7cZnxuIvDFVda2fQHwP4D4rimSpI2AVwI75E/zEtDTmCRuw/1Mss8YpiTseQxgP2LUHsTFPfaAbskgO6ouQYkObDyJHsKVIZyn+hGsEVrmAD6GDTeS3b3My3rZK8UNwHdP4hDIW5HIDIEky3wPYJvg3hOHcxAVv1E4g/gr4Csbyc1BS5Z9b9lPvvOTEnV6AWgof5K8RukLhR8gfpN8kfRutmRw9IUi9ybJkF1JHkptFFPBL17wmjUr6HcAfwB9IsNbDoANyW1N47jpTgDbZEo6kTynOgmvoE4C+xC4LT1ZKA5kElfuiVoXFYJJUVYXJud1oxllCZnQMfCW7L2Gg+3otxUgOas3jEWvcBt1rjgPDhQEKUDVpEuKTmTWsqKOg+FJwDYEms6rJiKkaExMAaIuIPaJohKgHl5pg3BiMDpgAXagFW6iqDTRYHu0dQAHU5TbpwDPEFzJcLChFo2G3NVGh6nrHKUNvcgAZw05o6hV5CgZspVMAVwg7OaSQC+gK9S1EaxVZJL0RpmaPY+CJNXP1ogDLb8KLbXeY9THQFEfyC7XoATwgpjMvKG61ai4N/49wjTHlChuNlriN80T9QK74ON3apXG8LdBmyVrtTKUtm8x7NzDornSbB/H9Wq0rsa1CezAwOsyjcp9FrpndHT17NJRsDoPxoiWiB04byTtu3HgzEM8PAaenJDz08sbc3VkNiM8KXKZvvM/IwuZ3vPx0Pfq5XzhH/bDdjDcOyQHAAAAAElFTkSuQmCC"/></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVet5wjAMlDIJ3aSdpDAJYRLaSWCTZpJcI/kl2Upo+UM+x9bpHoqZ+h8TEfKifdalw5e+km5lPeGrDUUDsLznED83ZAByfwFA3PdeJyORQaVeCiZk1V7QG5gx8WEff2syaNAIX2oAeCeiBxEtRPTFzLfdk4EHAM5EdK/nJ74J7eoBgJ+t8CkVlRixgFxCuTpmwHonYgEoZxdmfiu5S8tACWfZJMvC5oOZ5b8LHBOwSkPStbD3W1jUNzGtANq822ska9pgxRlE97JVj5mzm8T6ykqkFHxtBzQXXwCIV6br8SRPzG7QgBWwlEKHsWgLoFP6228oZGBrNsoyA+zoR9g92EsAiWqWISdrN7QLkTLLkiUoDyB0RaGaMn2aCfRNTNctTTmCA8iTmT82ea8by9n6VwHaoK1pLJo2aioAYfCpgP43T/I+RVyakIaqKQnAxXQwed6SoNOoxFaIsY9c48LMz4JXAbIE4tkGbmKqEmUGrcscyza2wmZiXhKmW08MBoDCIHvQGOpTzb1VJroDNv8MQFJ50jnoBq2LqWqcdCyf6yBJib0zWQECD67StTGqMhgunHwdlrvVe6BNiEcSc/9l2CtkGXS1w+Gwe8ZPT4ziC/3jInI3WjtndQ9uly5FIbo5Vt83antFQ0UOF38BPykHMC59TsoAAAAASUVORK5CYII="/></a>
+            <a href="https://discord.com/channels/@me" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjlJREFUSEuNVu1hq0AMk1jkpZO0mSTJJE0nSTpJ6CRlElTs84H5St79OnyHLUu2gbBFAPLd/62N+3suzP4iQLyaPTwNQBCC0msbqDe87Zncvk9BySDWdDdQrA5fYNmg4ylFkg6ATgB/SLYZiXp9AHgH4GdTDpkigvmgKi3pc3B2deELhA5Aa+cCwWL/EHAoe3UA72z4taSrBEgUVuflvTHAfnXNL15I3mdyLeVRLwOZVqAOyypmNggdG75lKZIrold/I3C2C/P3KlNhfZ7ZtSG/alvNNJD6XwCHZ3y4Bn5hG4LpRUYWdrdSJPVngLeZ80nACDqnK8dZaHZkw9bEzQFuAs8z+oE7yYuXq/C70ObNiRNOQzVcK4lRaU6TD4mUwQ2g8z82Hv24AO31iNI0t3eyudhI6L1XYNSOS0DbkEcPMDqQ1vwLRzZNqX/pMfSCNZetluRxAidNivhu1GHsZC/PjKHE7gBdBL4PT9eFtHcA30Ny1pQl8CREKVfNKMoo5glPlZNrZ69WSyEMGjjC3Qy2nS6YLiJvtXxQVEvasqvzZ8q1g9CC+BlEPEXZ2/zpQrjOxIy9FYdVWoXsI8Melp1sw+s0WJ3v2jSraR8GqyACD8AqybMxQOa8q1/JNK7jLbvX6yDgxBjFqXDT16qM5V4y9P9McHfsqE2HosCirxafzzxqZyOyVMwqsyxR7FMGyTJOqmefw42IgTr/QawzyCj2IK58T/SOfyfJFLm+4CDoyvyu/nUypQH0D5NEKS5FcbRmAAAAAElFTkSuQmCC"/></a>
+        </div>
+        <div class="tab">
+            <ul class="muenu">
+                <li><a href="#home"></a>Home</li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+          strings: ['Ratchaphuek Jailar', 'Student🎓','front-end'],
+          typeSpeed: 100,
+          backSpeed: 75,
+          loop: true
+        });
+      </script>
+
+</body>
+</html>
